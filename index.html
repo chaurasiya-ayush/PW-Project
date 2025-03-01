@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PW Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        body{
-            height: 100vh;
+
+        body {
             animation: animateBg 10s linear infinite;
             transition: 5s;
-            
-            background: linear-gradient(54deg,rgba(255, 72, 102, 0.557),rgba(209, 113, 193, 0.494),rgb(255, 165, 0,0.4),white); 
+            background: linear-gradient(54deg, rgba(255, 72, 102, 0.557), rgba(209, 113, 193, 0.494), rgb(255, 165, 0, 0.4), white);
         }
+
         @keyframes animateBg {
             0% {
-                background: linear-gradient(23deg ,rgba(241, 162, 14, 0.694),rgba(209, 54, 215, 0.337),rgba(255, 255, 255, 0.703)); 
+                background: linear-gradient(23deg, rgba(241, 162, 14, 0.694), rgba(209, 54, 215, 0.337), rgba(255, 255, 255, 0.703));
             }
+
             25% {
-                background: linear-gradient(54deg, rgba(209, 113, 193, 0.494), rgba(230, 151, 164, 0.957),white, rgba(255, 166, 0, 0.499) );
+                background: linear-gradient(54deg, rgba(209, 113, 193, 0.494), rgba(230, 151, 164, 0.957), white, rgba(255, 166, 0, 0.499));
             }
+
             50% {
-                background: linear-gradient(54deg, rgba(255, 192, 203, 0.957), white,rgba(209, 113, 193, 0.494), rgba(255, 166, 0, 0.499) );
+                background: linear-gradient(54deg, rgba(255, 192, 203, 0.957), white, rgba(209, 113, 193, 0.494), rgba(255, 166, 0, 0.499));
             }
+
             75% {
                 background: linear-gradient(54deg, rgba(255, 192, 203, 0.957), rgba(209, 113, 193, 0.494), rgba(255, 166, 0, 0.499), white);
             }
+
             100% {
                 background: linear-gradient(54deg, rgba(255, 192, 203, 0.957), rgba(209, 113, 193, 0.494), rgba(255, 166, 0, 0.499), white);
             }
         }
-        
-        footer{
+
+        footer {
             background-color: #3e3b3b;
             color: white;
             text-align: center;
             padding: 10px;
-            position:fixed;
+            position: fixed;
             bottom: 10px;
             width: 100%;
         }
-        #header{
+
+        #header {
             background-color: #3e3b3b;
             color: white;
             display: flex;
@@ -55,21 +64,21 @@
             margin-top: 20px;
             font-size: 20px;
         }
-        
+
         .book {
             position: relative;
             width: 200px;
             height: 300px;
         }
-        
+
         .book img {
             width: 100%;
             height: 100%;
             transition: transform 1s, opacity 0.9s;
-            
+
         }
-        
-        .info-box{
+
+        .info-box {
             height: 300px;
             width: 200px;
             background-color: #3e3b3b;
@@ -89,70 +98,76 @@
             transition: 2s;
 
         }
-        
+
         .book:hover img {
             transform: rotateY(180deg);
             opacity: 0;
         }
-        
-        .info-box:hover{
+
+        .info-box:hover {
             opacity: 1;
         }
-     
-     @media screen and (orientation: landscape){
-        #image{ 
-        display: flex;
-        justify-content: space-around;
-    }
-     #image div{
-        margin-top: 10px;
-     }
-    }
-     @media screen and (orientation: portrait){
-        #image{ 
-        display: block;
-        margin-left: 40px;
-     }
-     #image div{
-        margin-top: 20px;
-     }
-     #header{
-        white-space: nowrap;
-     }
-    }
+
+        @media screen and (orientation: landscape) {
+            #image {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            #image div {
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (orientation: portrait) {
+            #image {
+                display: block;
+                margin-left: 40px;
+            }
+
+            #image div {
+                margin-top: 20px;
+            }
+
+            #header {
+                white-space: nowrap;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <nav id="header"  >
+    <nav id="header">
         Welcome to Book Showcase
     </nav>
     <main class="m-3 mt-5">
         <div class="fw-bold fs-4">Explore Books</div>
-        <div  id="image">
-        <div class="book">
-            <a href="/book1.html">
-                <img src="/images/book1.webp" alt="Book 1">
-                <div class="info-box">Click For Detail</div>
-            </a>
+        <div id="image">
+            <div class="book">
+                <a href="/book1.html">
+                    <img src="/images/book1.webp" alt="Book 1">
+                    <div class="info-box">Click For Detail</div>
+                </a>
+            </div>
+            <div class="book">
+                <a href="/book2.html">
+                    <img src="/images/book2.jpg" alt="Book 2">
+                    <div class="info-box">Click For Detail</div>
+                </a>
+            </div>
+            <div class="book">
+                <a href="/book3.html">
+                    <img src="/images/book3.jpg" alt="Book 3">
+                    <div class="info-box">Click For Detail</div>
+                </a>
+            </div>
         </div>
-        <div class="book">
-            <a href="/book2.html">
-                <img src="/images/book2.jpg" alt="Book 2">
-                <div class="info-box">Click For Detail</div>
-            </a>
-        </div>
-        <div class="book">
-            <a href="/book3.html">
-                <img src="/images/book3.jpg" alt="Book 3">
-                <div class="info-box">Click For Detail</div>
-            </a>
-        </div>
-    </div>
     </main>
-    <footer  >
+    <footer>
         <span class="bi bi-c-circle me-1 "></span>
         <span>2025 Book Showcase | All rights reserved</span>
     </footer>
-   
+
 </body>
+
 </html>
