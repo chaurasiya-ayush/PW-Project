@@ -19,6 +19,7 @@
         body {
             animation: animateBg 10s linear infinite;
             transition: 5s;
+            height: 100vh;
             background: linear-gradient(54deg, rgba(255, 72, 102, 0.557), rgba(209, 113, 193, 0.494), rgb(255, 165, 0, 0.4), white);
         }
 
@@ -74,7 +75,7 @@
         .book img {
             width: 100%;
             height: 100%;
-            transition: transform 1s, opacity 0.9s;
+            transition: transform 2s, opacity 0.9s;
 
         }
 
@@ -96,6 +97,7 @@
             align-items: center;
             margin-left: 4px;
             transition: 2s;
+            transform: rotateY(180deg);
 
         }
 
@@ -106,6 +108,8 @@
 
         .info-box:hover {
             opacity: 1;
+            transform: rotateY(0deg);
+            
         }
 
         @media screen and (orientation: landscape) {
@@ -144,20 +148,20 @@
         <div class="fw-bold fs-4">Explore Books</div>
         <div id="image">
             <div class="book">
-                <a href="/book1.html">
-                    <img src="/images/book1.webp" alt="Book 1">
+                <a href="book1.html">
+                    <img src="/Public/images/book1.webp" alt="Book 1">
                     <div class="info-box">Click For Detail</div>
                 </a>
             </div>
             <div class="book">
-                <a href="/book2.html">
-                    <img src="/images/book2.jpg" alt="Book 2">
+                <a href="book2.html">
+                    <img src="/Public/images/book2.jpg" alt="Book 2">
                     <div class="info-box">Click For Detail</div>
                 </a>
             </div>
             <div class="book">
-                <a href="/book3.html">
-                    <img src="/images/book3.jpg" alt="Book 3">
+                <a href="book3.html">
+                    <img src="/Public/images/book3.jpg" alt="Book 3">
                     <div class="info-box">Click For Detail</div>
                 </a>
             </div>
