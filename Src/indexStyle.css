@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    animation: animateBg 10s linear infinite;
+    transition: 5s;
+    height: 100vh;
+    background: linear-gradient(54deg, rgba(255, 72, 102, 0.557), rgba(209, 113, 193, 0.494), rgb(255, 165, 0, 0.4), white);
+}
+
+@keyframes animateBg {
+    0% {
+        background: linear-gradient(23deg, rgba(241, 162, 14, 0.694), rgba(209, 54, 215, 0.337), rgba(255, 255, 255, 0.703));
+    }
+
+    25% {
+        background: linear-gradient(54deg, rgba(209, 113, 193, 0.494), rgba(230, 151, 164, 0.957), white, rgba(255, 166, 0, 0.499));
+    }
+
+    50% {
+        background: linear-gradient(54deg, rgba(255, 192, 203, 0.957), white, rgba(209, 113, 193, 0.494), rgba(255, 166, 0, 0.499));
+    }
+
+    75% {
+        background: linear-gradient(54deg, rgba(255, 192, 203, 0.957), rgba(209, 113, 193, 0.494), rgba(255, 166, 0, 0.499), white);
+    }
+
+    100% {
+        background: linear-gradient(54deg, rgba(255, 192, 203, 0.957), rgba(209, 113, 193, 0.494), rgba(255, 166, 0, 0.499), white);
+    }
+}
+
+footer {
+    background-color: #3e3b3b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
+
+#header {
+    background-color: #3e3b3b;
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.book {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.book img {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s, opacity 0.9s;
+}
+
+.info-box {
+    height: 300px;
+    width: 200px;
+    background-color: #3e3b3b;
+    position: absolute;
+    color: rgb(193, 187, 187);
+    top: -9px;
+    left: -8px;
+    opacity: 0;
+    text-align: center;
+    display: flex;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    transition: 2s;
+    transform: rotateY(180deg);
+
+}
+.book:hover{
+img{
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.info-box {
+    opacity: 1;
+    transform: rotateY(0deg);
+    
+}
+}
+
+@media screen and (orientation: landscape) {
+    #image {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #image div {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #image {
+        display: block;
+        margin-left: 40px;
+    }
+
+    #image div {
+        margin-top: 20px;
+    }
+
+    #header {
+        white-space: nowrap;
+    }
+}
