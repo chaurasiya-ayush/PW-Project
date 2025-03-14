@@ -10,84 +10,119 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
         <link rel="stylesheet" href="Src/books.css">
     
 </head>
 
 <body>
     <nav>
-        <div id="navTitle">
+        <div id="navTitle" >
             Book Showcase: Book 2 Details
         </div>
         <div id="navLink">
-            <a href="index.html" class="btn btn-link ">Home</a>
+            <a href="index.html" class="btn btn-link " >Home</a>
         </div>
     </nav>
     <section>
-        <h3 class="mt-3 mb-3">Book 2: Invention and Innovation</h3>
-        <img src="./Public/images/book2.jpg" height="400px" width="300px" alt="">
-        <details>
-            <summary>Genre</summary>
-            <p>
-            <ul>
-                <li>Technology</li>
-                <li>Education</li>
-            </ul>
-            </p>
-        </details>
-        <details>
-            <summary>Index Page</summary>
-            <p>
-            <ul>
-                <li>Introduction</li>
-                <li>Chapter1: Overview</li>
-                <li>Chapter2: Advanced Concept</li>
-            </ul>
-            </p>
-        </details>
-        <details>
-            <summary>Author</summary>
-            <p>
-                Jane Doe,John Smith
-            </p>
-        </details>
-        <details>
-            <summary>Overview</summary>
-            <p>
-                This book provides detailed insights into technology and communication skills for professionals and
-                students
-            </p>
-        </details>
-        <details>
-            <summary>Competitive Exam Relevance</summary>
-            <p>
-                Highly recommended for IT and communication-related government exams.
-            </p>
-        </details>
-        <details>
-            <summary>Purchase Links</summary>
-            <ul>
-                <li>
-                    <a
-                        href="https://www.amazon.com/50-Revolutionary-Inventions-Important-Discoveries/dp/B0BZ37D49V">Amazon</a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.flipkart.com/strategic-inventions-revolutionary-war/p/itmfbyxhbtnwgzya?pid=9781502610294&cmpid=product.share.pp">
-                        Flipkart
-                    </a>
-                </li>
-            </ul>
+        <h3 class="mt-3 mb-4 fw-bold">Book 1: The Evolution of Manufacturing</h3>
+        <img src="./Public/images/book2.jpg" height="400px" width="300px" alt=""> <br>
+        <!--First Dialog Box -->
+        <button class="btn fs-5 fw-bolder  bi bi-play-fill m-3" data-bs-target="#dialog1" data-bs-toggle="collapse">Genre</button>
+        <div class="w-50">
+            <div class="collapse  collapse-horizontal " id="dialog1">
+                <div class="card card-body  bg-body-secondary" id="collapseWidth">
 
-        </details>
+                    <ul>
+                        <li> Science & Innovation</li>
+                        <li>Industrial & Manufacturing Engineering</li>
+                        <li>History of Technology</li>
+                        <li>Mechanical & Production Engineering</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!--Second Dialog Box -->
+        <button class="btn fs-5 fw-bolder  bi bi-play-fill m-3" data-bs-target="#dialog2" data-bs-toggle="collapse">Index Page</button>
+        <div class="w-50">
+            <div class="collapse  collapse-horizontal " id="dialog2">
+                <div class="card card-body  bg-body-secondary" id="collapseWidth">
+                    <ul>
+                        <li>Introduction</li>
+                        <li>Chapter1: Overview</li>
+                        <li>Chapter2: Advanced Concept</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!--Third Dialog Box -->
+        <button class="btn fs-5 fw-bolder  bi bi-play-fill m-3" data-bs-target="#dialog3" data-bs-toggle="collapse">Author</button>
+        <div class="w-50">
+            <div class="collapse  collapse-horizontal " id="dialog3">
+                <div class="card card-body  bg-body-secondary" id="collapseWidth">
+                    <p>
+                        Serope Kalpakjian and Steven Schmid
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!--Fourth Dialog Box -->
+        <button class="btn fs-5 fw-bolder  bi bi-play-fill m-3" data-bs-target="#dialog4" data-bs-toggle="collapse">Overview</button>
+        <div class="w-50">
+            <div class="collapse  collapse-horizontal " id="dialog4">
+                <div class="card card-body  bg-body-secondary" id="collapseWidth">
+                    <p>
+                        This book explores 50 groundbreaking inventions that have transformed manufacturing engineering and technology, from the Industrial Revolution to Industry 4.0.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!--Fifth Dialog Box -->
+        <button class="btn fs-5 fw-bolder  bi bi-play-fill m-3" data-bs-target="#dialog5" data-bs-toggle="collapse">Competitive Exam </button>
+        <div class="w-50">
+            <div class="collapse  collapse-horizontal " id="dialog5">
+                <div class="card card-body  bg-body-secondary" id="collapseWidth">
+                    <p>
+                        If your book focuses on key manufacturing inventions and technological advancements, it can be highly relevant for various competitive exams in the field of engineering and technology.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!--Sixth Dialog Box -->
+        <button class="btn fs-5 fw-bolder  bi bi-play-fill m-3" data-bs-target="#dialog6" data-bs-toggle="collapse">Purchase Links</button>
+        <div class="w-50">
+            <div class="collapse  collapse-horizontal " id="dialog6">
+                <div class="card card-body  bg-body-secondary" id="collapseWidth">
+            <ul>
+                <li>
+                    <a
+                        href="https://www.amazon.co.uk/50-Revolutionary-Inventions-Important-Discoveries/dp/B0BZ37D49V">Amazon</a>
+                </li>
+                <li>
+                    <a href="https://www.flipkart.com/strategic-inventions-revolutionary-war/p/itmfbyxhbtnwgzya?pid=9781502610294">Flipkart</a>
+                </li>
+            </ul>
+                </div>
+            </div>
+
+        </div>
         <h3 class="mt-3">Feedback Form</h3>
         <div class=" w-100 d-flex justify-content-center">
-            <form action="" class="w-75 border border-4 p-3 pt-4 pb-4 rounded rounded-4 bg-body-secondary">
+            <form action="" class="w-75 border border-4 p-3 pt-4 pb-4 rounded rounded-4 bg-body-secondary  bg-body-secondary">
                 <label class="fw-bold" for="name">Name</label>
                 <input type="text" name="Name" id="name" required class="form-control">
                 <label class="fw-bold" for="Feedback">Feedback</label>
                 <textarea name="Feedback" id="Feedback" class="form-control"></textarea>
-                <button type="submit" class="btn btn-primary mt-3 w-100">Submit Feedback</button>
+                <button type="submit" class=" btn  bg-primary mt-3 w-100"><a href="./Thankyou_page.html" class="  text-white text-decoration-none" style="text-align: end;" >
+                    Submit Feedback
+            </a></button>
             </form>
         </div>
     </section>
