@@ -68,9 +68,9 @@ footer {
 .info-box {
     height: 300px;
     width: 200px;
-    background-color: #3e3b3b;
+     background: linear-gradient(45deg,rgba(6, 6, 6, 0.797),rgb(82, 79, 79,0.837),rgba(6, 6, 6, 0.797),rgb(82, 79, 79,0.837),rgba(6, 6, 6, 0.797));
     position: absolute;
-    color: rgb(193, 187, 187);
+    color: rgb(250, 247, 247);
     top: -9px;
     left: -8px;
     opacity: 0;
@@ -85,6 +85,14 @@ footer {
     transition: 2s;
     transform: rotateY(180deg);
 
+}
+#infoButton{
+    border: 1px solid white;
+    
+}
+#infoButton:hover{
+    background:linear-gradient(54deg, rgba(255, 72, 102, 0.557), rgba(209, 113, 193, 0.494), rgb(255, 165, 0, 0.4), white); ;
+    color: black;
 }
 .book:hover{
 img{
